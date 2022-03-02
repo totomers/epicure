@@ -1,0 +1,48 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.chef-section {
+  padding: 0 400px;
+}
+
+.image-container {
+  position: relative;
+  img {
+    width: 433px;
+    height: auto;
+  }
+  div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 78px;
+    @include flex-center();
+    background-color: rgba(255, 255, 255, 0.329);
+    span {
+      font-family: HelveticaNeue;
+      font-size: 40px;
+      letter-spacing: 1.43px;
+      text-align: center;
+      color: $black;
+    }
+  }
+}
+
+.about-chef-section {
+  @include flex-between();
+  width: 100%;
+}
+
+.chef-description {
+  flex: 1;
+  margin-left: 60px;
+  width: 540px;
+  height: 292px;
+  font-family: HelveticaNeue;
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 1.08px;
+  text-align: justify;
+  color: $black;
+}
