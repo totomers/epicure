@@ -4,6 +4,7 @@
 .navbar {
   @include flex-between();
   width: 100vw;
+  padding: 10px;
 }
 
 .left-navbar {

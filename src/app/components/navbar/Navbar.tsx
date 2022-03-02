@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../UI/input/Input";
-import Logo from "./sections/Logo";
-import Routes from "./sections/Routes";
+import Logo from "./subcomponents/Logo";
+import Routes from "./subcomponents/Routes";
 import "./Navbar.scss";
 import Icon from "../UI/icon/Icon";
 function Navbar() {
@@ -18,6 +18,7 @@ function Navbar() {
           iconDirection={"right"}
           className="navbar-input"
           placeHolder="Search for restaurant cuisine, chef"
+          style={{ width: "600px" }}
         ></Input>
         <Icon url="/icons/user-icon.svg"></Icon>
         <Icon url="/icons/bag-icon.svg"></Icon>

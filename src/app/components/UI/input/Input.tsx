@@ -21,6 +21,7 @@ function Input(props: IPropsInput) {
     className,
     placeHolder,
   } = props;
+
   const padding = 10;
   const leftPadding =
     iconDirection == "left" ? `${padding + iconSize}` : `${padding}`;

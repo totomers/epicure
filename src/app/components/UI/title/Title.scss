@@ -1,0 +1,7 @@
+@import "../../../../styles/mixins.scss";
+
+.title-bar {
+  @include flex-center();
+  h1 {
+  }
+}
