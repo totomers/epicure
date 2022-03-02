@@ -55,6 +55,12 @@
 }
 @mixin flex-between($direction: row) {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex-around($direction: row) {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: $direction;

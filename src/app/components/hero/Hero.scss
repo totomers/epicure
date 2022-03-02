@@ -16,7 +16,7 @@
   }
 }
 
-.card {
+.hero-card {
   @include flex-center(column);
   background-color: rgba($white, 0.88);
   z-index: 1;

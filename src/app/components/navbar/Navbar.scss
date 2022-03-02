@@ -2,7 +2,7 @@
 @import "../../../styles/colors.scss";
 
 .navbar {
-  @include flex-between();
+  @include flex-around();
   width: 100vw;
   padding: 10px;
 }
@@ -11,11 +11,11 @@
   @include flex-center();
 }
 .right-navbar {
-  @include flex-between();
-  width: 35%;
+  @include flex-around();
+  width: 40%;
 }
 .routes {
-  @include flex-between();
+  @include flex-around();
 }
 .route-item {
   letter-spacing: 1.92px;
