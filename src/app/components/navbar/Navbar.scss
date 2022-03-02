@@ -1,0 +1,47 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.navbar {
+  @include flex-between();
+  width: 100vw;
+}
+
+.left-navbar {
+  @include flex-center();
+}
+.right-navbar {
+  @include flex-between();
+  width: 35%;
+}
+.routes {
+  @include flex-between();
+}
+.route-item {
+  letter-spacing: 1.92px;
+  margin: 6px;
+}
+
+.logo {
+  @include flex-center();
+}
+
+.EPICURE {
+  width: 115px;
+  height: 32px;
+  margin: 1px 31px 1px 15px;
+  font-family: HelveticaNeue;
+  font-size: 27px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  color: $black;
+}
+
+.logo-img {
+  width: 33px;
+  height: 33px;
+  margin: 0 15px 1px 0;
+  object-fit: contain;
+}
