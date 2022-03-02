@@ -5,6 +5,7 @@ import Navbar from "./app/components/navbar/Navbar";
 import Hero from "./app/components/hero/Hero";
 import RestaurantsSection from "./app/components/restaurants-section/RestaurantsSection";
 import DishesSection from "./app/components/dishes/DishesSection";
+import IconSection from "./app/components/icon-section/IconSection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero></Hero>
       <RestaurantsSection></RestaurantsSection>
       <DishesSection></DishesSection>
+      <IconSection></IconSection>
     </div>
   );
 }
