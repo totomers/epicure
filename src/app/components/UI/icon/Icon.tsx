@@ -9,7 +9,9 @@ interface IPropsIcon {
 
 function Icon(props: IPropsIcon) {
   const { url = "", size = 30, style } = props;
-  return <img src={url} style={{ width: size, height: size, ...style }}></img>;
+  return (
+    <img src={url} style={{ height: size, width: "auto", ...style }}></img>
+  );
 }
 
 export default Icon;

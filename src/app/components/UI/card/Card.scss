@@ -8,10 +8,6 @@
 .hover-title {
   font-family: HelveticaNeue;
   font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.77px;
   text-align: center;
   color: $black;
@@ -19,59 +15,60 @@
 
 .card {
   width: 360px;
-  height: 357px;
+  min-height: 357px;
   background-color: $beige;
 }
 
 .card-image {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .card-title {
   font-family: HelveticaNeue;
   font-size: 38.4px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
   letter-spacing: 2.56px;
   text-align: center;
   color: $black;
+  padding: 0 83px;
 }
 
 .card-subtitle {
+  padding: 0 40px;
   font-family: HelveticaNeue;
   font-size: 24px;
   font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
   letter-spacing: 1.6px;
   text-align: center;
   color: $black;
+  &.long {
+    height: 150px;
+    margin: 20px 0;
+  }
 }
 
 .logo-bar {
   @include flex-center();
+  &.long {
+    height: 30px;
+  }
 }
 
 .card-price-bar {
   padding: 10px;
+  @include flex-center();
 }
 
 .bar {
   margin: 5px;
   height: 1px;
-  border: solid 0.5px $brownGrey;
+  border: solid 0.5px rgba($brownGrey, 0.4);
+  flex: 1;
 }
 .price {
   font-family: HelveticaNeue;
   font-size: 24.9px;
   font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.66px;
-  color: $black;
+  color: rgba($black, 0.7);
 }

@@ -1,18 +1,8 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/colors.scss";
 
-.restaurants-section {
-  width: 100vw;
-  padding: 100px;
-  @include flex-center(column);
-}
-
 .restaurants-inner-container {
-  width: 80vw;
-}
-
-.restaurant-Carousel {
-  @include flex-between();
+  width: 100%;
 }
 
 .restaurant-footer {
