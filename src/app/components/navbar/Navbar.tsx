@@ -1,6 +1,6 @@
 import React from "react";
 import Input from "../UI/input/Input";
-import Logo from "./subcomponents/Logo";
+import Logo from "../logo/Logo";
 import Routes from "./subcomponents/Routes";
 import "./Navbar.scss";
 import Icon from "../UI/icon/Icon";

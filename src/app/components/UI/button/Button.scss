@@ -1,0 +1,16 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/colors.scss";
+
+.button {
+  width: 181.2px;
+  height: 52.6px;
+  padding: 7.2px 17.6px 8.4px 15px;
+  border-radius: 9.6px;
+  border: solid 0.6px $black;
+  cursor: pointer;
+  background-color: transparent;
+  @include flex-center();
+  .icon {
+    margin: 0 2px;
+  }
+}

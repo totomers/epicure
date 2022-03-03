@@ -1,0 +1,60 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.about-us-section {
+  padding: 0 400px;
+  padding-bottom: 61px;
+}
+
+.text-logo-container {
+  @include flex-center(column);
+  @include md() {
+    @include flex-between;
+  }
+
+  .text {
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 1.69px;
+    text-align: justify;
+    color: $black;
+    width: 50%;
+  }
+
+  .logo {
+    width: 50%;
+  }
+}
+.buttons-container {
+  @include flex-start();
+  & > * {
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+}
+.Download-on-the-App {
+  width: 120px;
+  height: 36px;
+  font-family: HelveticaNeue;
+  font-size: 13.2px;
+  letter-spacing: 1.29px;
+  text-align: center;
+  @include flex-center(column);
+  .text-style-1 {
+    font-size: 16.8px;
+  }
+}
+
+.Get-it-on-Google-Pla {
+  width: 106px;
+  height: 36px;
+  font-family: HelveticaNeue;
+  font-size: 16.8px;
+  letter-spacing: 1.29px;
+  text-align: center;
+  @include flex-center(column);
+  .text-style-1 {
+    font-size: 13.2px;
+  }
+}

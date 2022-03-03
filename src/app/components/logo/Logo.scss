@@ -1,0 +1,28 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.logo {
+  @include flex-center();
+}
+
+.EPICURE {
+  width: 115px;
+  height: 32px;
+  margin: 1px 31px 1px 15px;
+  font-family: HelveticaNeue;
+  font-size: 27px;
+  font-weight: 100;
+  letter-spacing: 1.35px;
+  color: $black;
+}
+
+.logo-img {
+  width: 33px;
+  height: 33px;
+  margin: 0 15px 1px 0;
+  object-fit: contain;
+  &.large {
+    width: 178px;
+    height: 166px;
+  }
+}

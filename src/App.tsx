@@ -7,16 +7,18 @@ import RestaurantsSection from "./app/components/restaurants-section/Restaurants
 import DishesSection from "./app/components/dishes-section/DishesSection";
 import IconSection from "./app/components/icon-section/IconSection";
 import ChefSection from "./app/components/chef-section/ChefSection";
+import AboutUs from "./app/components/about-us/AboutUs";
 
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <RestaurantsSection></RestaurantsSection>
-      <DishesSection></DishesSection>
-      <IconSection></IconSection>
-      <ChefSection></ChefSection>
+      <Navbar />
+      <Hero />
+      <RestaurantsSection />
+      <DishesSection />
+      <IconSection />
+      <ChefSection />
+      <AboutUs />
     </div>
   );
 }
