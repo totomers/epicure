@@ -8,6 +8,7 @@ import DishesSection from "./app/components/dishes-section/DishesSection";
 import IconSection from "./app/components/icon-section/IconSection";
 import ChefSection from "./app/components/chef-section/ChefSection";
 import AboutUs from "./app/components/about-us/AboutUs";
+import Footer from "./app/components/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <IconSection />
       <ChefSection />
       <AboutUs />
+      <Footer />
     </div>
   );
 }

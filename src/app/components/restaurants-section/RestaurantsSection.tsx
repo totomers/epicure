@@ -11,7 +11,12 @@ function RestaurantsSection() {
         <Title> THE POPULAR RESTAURANTS IN EPICURE :</Title>
         <Carousel>
           {restaurants.map((r) => (
-            <Card title={r.name} subtitle={r.chef} url={r.url}></Card>
+            <Card
+              key={r.name}
+              title={r.name}
+              subtitle={r.chef}
+              url={r.url}
+            ></Card>
           ))}
         </Carousel>
         <div className="restaurant-footer">

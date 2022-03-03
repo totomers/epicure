@@ -7,7 +7,6 @@ interface IPropsInput {
   iconDirection?: "right" | "left";
   type?: string;
   className?: string;
-  style?: CSSProperties;
   placeHolder?: string;
 }
 
@@ -16,7 +15,6 @@ function Input(props: IPropsInput) {
     iconUrl,
     iconSize = 0,
     type = "text",
-    style,
     iconDirection = "left",
     className,
     placeHolder,
@@ -36,7 +34,6 @@ function Input(props: IPropsInput) {
         placeholder={placeHolder}
         style={{
           padding: `${padding}px ${rightPadding}px ${padding}px ${leftPadding}px `,
-          ...style,
         }}
       ></input>
       {iconUrl && (

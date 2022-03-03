@@ -14,11 +14,10 @@ function Navbar() {
       <div className="right-navbar">
         <Input
           iconUrl="/icons/search-icon.svg"
-          iconSize={30}
+          iconSize={22}
           iconDirection={"right"}
           className="navbar-input"
           placeHolder="Search for restaurant cuisine, chef"
-          style={{ width: "600px" }}
         ></Input>
         <Icon url="/icons/user-icon.svg"></Icon>
         <Icon url="/icons/bag-icon.svg"></Icon>

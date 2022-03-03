@@ -13,4 +13,7 @@
   &.center {
     @include flex-center(column);
   }
+  &.center-row {
+    @include flex-center();
+  }
 }

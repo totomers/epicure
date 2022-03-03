@@ -11,6 +11,7 @@ function DishesSection() {
       <Carousel>
         {dishes.map((d) => (
           <Card
+            key={d.name}
             title={d.name}
             hoverTitle={d.restaurant}
             url={d.url}

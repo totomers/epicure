@@ -7,13 +7,43 @@
   position: relative;
   background-color: aqua;
 
-  @include flex-center();
+  @include flex-center(column);
   .background {
     height: 100vh;
     width: 100vw;
     position: absolute;
     z-index: 0;
   }
+}
+.routes-mobile-block {
+  width: 100%;
+  height: 125px;
+  opacity: 0.9;
+  background-color: #fafafa;
+  display: inline-block;
+  @include flex-around();
+
+  @include md {
+    display: none;
+  }
+  //   .routes {
+  //     z-index: 1;
+  //     display: inline-block;
+  //     background-color: blue;
+  //   }
+
+  //   .route-item {
+  //     width: 131px;
+  //     height: 43px;
+  //     margin: 0 0 0 17px;
+  //     padding: 15px 14px 13px;
+  //     background-color: $sand;
+  //     font-family: HelveticaNeue;
+  //     font-weight: 200;
+  //     font-size: 16px;
+  //     letter-spacing: 0.93px;
+  //     @include flex-center();
+  //   }
 }
 
 .hero-card {
@@ -26,12 +56,19 @@
     font-family: HelveticaNeue;
     font-size: 35px;
     font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
     letter-spacing: 1.97px;
     text-align: center;
     margin: 10px;
     width: 70%;
+  }
+}
+
+.hero-input {
+  width: 315px;
+  height: 34px;
+
+  @include md {
+    width: 415px;
   }
 }

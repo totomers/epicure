@@ -14,7 +14,7 @@ function IconSection() {
       <Title>THE MEANING OF OUR ICONS :</Title>
       <div className="icons-container">
         {icons.map((i) => (
-          <div className="icon-item">
+          <div key={i.label} className="icon-item">
             <Icon url={i.url} size={70}></Icon>
             <span>{i.label}</span>
           </div>

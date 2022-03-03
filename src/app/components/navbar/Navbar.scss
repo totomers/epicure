@@ -15,9 +15,27 @@
   width: 40%;
 }
 .routes {
-  @include flex-around();
+  display: none;
+  @include md {
+    display: block;
+    @include flex-around();
+  }
 }
 .route-item {
   letter-spacing: 1.92px;
   margin: 6px;
+}
+
+.navbar-input {
+  height: 34px;
+  display: none;
+
+  @include md {
+    display: inline;
+    width: 315px;
+  }
+
+  @include lg {
+    width: 415px;
+  }
 }

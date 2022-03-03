@@ -19,7 +19,7 @@ function ChefSection() {
         <Title align="start">{firstName + "'s restaurants: "}</Title>
         <Carousel>
           {c1.restaurants.map((r) => (
-            <Card url={r.url} title={r.name} size={"small"}></Card>
+            <Card key={r.name} url={r.url} title={r.name} size={"small"}></Card>
           ))}
         </Carousel>
       </div>

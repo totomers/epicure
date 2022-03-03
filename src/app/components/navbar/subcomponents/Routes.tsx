@@ -10,7 +10,7 @@ function Routes() {
   return (
     <div className="routes">
       {routes.map((r: IRoute) => (
-        <RouteItem route={r} />
+        <RouteItem key={r.label} route={r} />
       ))}
     </div>
   );
