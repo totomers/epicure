@@ -2,17 +2,21 @@
 
 .title-bar {
   @include flex-center();
-  padding: 30px;
+  padding: 30px 2px;
   width: 100%;
   h1 {
     font-family: HelveticaNeue;
     font-size: 30px;
     font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
     letter-spacing: 1.25px;
     text-align: center;
     color: var(--black);
+  }
+  &.start {
+    @include flex-start();
+  }
+  &.end {
+    @include flex-end();
   }
 }

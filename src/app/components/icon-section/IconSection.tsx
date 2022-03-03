@@ -10,7 +10,7 @@ function IconSection() {
     { url: "/icons/vegan-icon.svg", label: "Vegan" },
   ];
   return (
-    <div className="section grey">
+    <div className="section center grey">
       <Title>THE MEANING OF OUR ICONS :</Title>
       <div className="icons-container">
         {icons.map((i) => (

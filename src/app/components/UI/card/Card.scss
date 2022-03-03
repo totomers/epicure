@@ -17,6 +17,9 @@
   width: 360px;
   min-height: 357px;
   background-color: $beige;
+  &.small {
+    width: 231px;
+  }
 }
 
 .card-image {
@@ -30,7 +33,13 @@
   letter-spacing: 2.56px;
   text-align: center;
   color: $black;
-  padding: 0 83px;
+  //   padding: 0 83px;
+  min-height: 90px;
+  &.small {
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
 }
 
 .card-subtitle {
