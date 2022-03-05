@@ -3,7 +3,6 @@
 
 .chef-section {
   padding: 0 218px;
-  margin-bottom: 100px;
 }
 
 .image-container {
@@ -34,8 +33,10 @@
 .about-chef-section {
   @include md() {
     @include flex-between();
+    align-items: start;
   }
   @include flex-between(column);
+
   width: 100%;
 }
 

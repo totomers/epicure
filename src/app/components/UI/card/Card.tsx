@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../icon/Icon";
+import Marginer from "../marginer/Marginer";
 import "./Card.scss";
 interface IPropsCard {
   className?: string;
@@ -29,22 +30,37 @@ function Card(props: IPropsCard) {
   } = props;
   return (
     <div className={`card-container ${className}`}>
-      {hoverTitle && <div className="hover-title">{hoverTitle}</div>}
+      {hoverTitle && (
+        <>
+          <div className="hover-title">{hoverTitle}</div>
+          <Marginer height={23}></Marginer>
+        </>
+      )}
 
       <div className={`card ${size}`}>
         <img src={url} className={`card-image  `}></img>
+        <Marginer height={15}></Marginer>
         <div className={`card-title ${size}`}>{title}</div>
+        <Marginer height={3.8}></Marginer>
         <div className={`card-subtitle ${long ? "long" : ""}`}>{subtitle}</div>
+        <Marginer height={25}></Marginer>
         <div className={`logo-bar ${long ? "long" : ""}`}>
           {logo && <Icon size={logoSize} url={logo}></Icon>}
         </div>
 
         {price && (
-          <div className="card-price-bar">
-            <div className="bar"></div>
-            <span className="price">₪{price}</span>
-            <div className="bar"></div>
-          </div>
+          <>
+            <Marginer height={15}></Marginer>
+            <div className="card-price-bar">
+              <div className="bar"></div>
+              <span className="price">
+                <span className="sheckel">&#8362;</span>
+                {price}
+              </span>
+              <div className="bar"></div>
+            </div>
+            <Marginer height={11}></Marginer>
+          </>
         )}
       </div>
     </div>

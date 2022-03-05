@@ -19,7 +19,7 @@
     letter-spacing: 1.69px;
     text-align: justify;
     color: $black;
-    width: 570px;
+    width: 650px;
   }
 
   .logo {
@@ -34,7 +34,7 @@
   @include flex-start();
   & > * {
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 25px;
   }
 }
 .Download-on-the-App {

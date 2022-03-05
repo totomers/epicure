@@ -18,18 +18,18 @@
 
   @include md {
     width: 360px;
-    min-height: 357px;
+    // min-height: 357px;
   }
 
   background-color: $beige;
   &.small {
     width: 231px;
+    margin-right: 20px;
   }
 }
 
 .card-image {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .card-title {
@@ -38,25 +38,32 @@
   letter-spacing: 2.56px;
   text-align: center;
   color: $black;
-  //   padding: 0 83px;
+  padding: 0 81.3px;
   &.small {
     font-family: HelveticaNeue;
     font-size: 30px;
     letter-spacing: 2px;
+    width: 100%;
+    @include flex-center();
+    align-items: start;
+    // padding: 0 57px;
+    height: 70px;
   }
 }
 
 .card-subtitle {
-  padding: 0 40px;
+  width: 291.5px;
+  margin-left: 32px;
+  margin-right: 36.5px;
   font-family: HelveticaNeue;
   font-size: 24px;
   font-weight: 100;
   letter-spacing: 1.6px;
   text-align: center;
+  @include flex-center();
   color: $black;
   &.long {
-    height: 150px;
-    margin: 20px 0;
+    min-height: 154.8px;
   }
 }
 
@@ -68,7 +75,7 @@
 }
 
 .card-price-bar {
-  padding: 10px;
+  padding: 0 10px;
   @include flex-center();
 }
 
@@ -82,7 +89,15 @@
   font-family: HelveticaNeue;
   font-size: 24.9px;
   font-weight: 100;
-
+  padding: 0 8px;
   letter-spacing: 1.66px;
   color: rgba($black, 0.7);
+}
+
+.sheckel {
+  font-size: smaller;
+  font-weight: 100;
+  color: rgba($black, 0.6);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
