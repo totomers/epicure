@@ -3,10 +3,11 @@ import { dishes } from "../../../_mock-data.ts/dishes";
 import Card from "../UI/card/Card";
 import Carousel from "../UI/carousel/Carousel";
 import Title from "../UI/title/Title";
+import "./DishesSection.scss";
 
 function DishesSection() {
   return (
-    <div className="section">
+    <div className="section dishes-section">
       <Title>SIGNATURE DISH OF :</Title>
       <Carousel>
         {dishes.map((d) => (

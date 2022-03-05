@@ -20,16 +20,16 @@ function Input(props: IPropsInput) {
     placeHolder,
   } = props;
 
-  const padding = 10;
+  const padding = 20;
   const leftPadding =
     iconDirection == "left" ? `${padding + iconSize}` : `${padding}`;
   const rightPadding =
     iconDirection == "right" ? `${padding + iconSize}` : `${padding}`;
 
   return (
-    <div className="input-container">
+    <div className={`input-container ${className}`}>
       <input
-        className={`input ${className}`}
+        className={`input `}
         type={type}
         placeholder={placeHolder}
         style={{
@@ -42,8 +42,8 @@ function Input(props: IPropsInput) {
             url={iconUrl}
             size={iconSize}
             style={{
-              marginRight: `${padding}px`,
-              marginLeft: `${padding}px`,
+              marginRight: `15px`,
+              marginLeft: `15px`,
             }}
           ></Icon>
         </div>

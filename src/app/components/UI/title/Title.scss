@@ -3,7 +3,6 @@
 
 .title-bar {
   @include flex-center();
-  padding: 30px 2px;
   width: 100%;
   h1 {
     font-family: HelveticaNeue;

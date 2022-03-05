@@ -1,14 +1,17 @@
 @import "../../../styles/colors.scss";
 @import "../../../styles/mixins.scss";
 
+.icons-section {
+  margin-bottom: 100px;
+}
+
 .grey {
   background-color: $lightGrey;
 }
 
 .icons-container {
   width: 70%;
-  margin: 20px 0;
-  @include flex-around();
+  @include flex-center();
 }
 
 .icon-item {
@@ -17,7 +20,7 @@
     font-family: HelveticaNeue;
     font-size: 25.2px;
     font-weight: 100;
-    margin: 20px 0;
+    margin: 20px 50px;
     letter-spacing: 1.94px;
     text-align: center;
     color: var(--black);

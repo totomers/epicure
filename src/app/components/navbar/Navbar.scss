@@ -11,8 +11,11 @@
   @include flex-center();
 }
 .right-navbar {
-  @include flex-around();
+  @include flex-center();
   width: 40%;
+  & > * {
+    margin-left: 31px;
+  }
 }
 .routes {
   display: none;
@@ -20,18 +23,22 @@
     display: block;
     @include flex-around();
   }
+  & > * {
+    margin-left: 28px;
+  }
 }
 .route-item {
   letter-spacing: 1.92px;
-  margin: 6px;
+  width: 110px;
 }
 
 .navbar-input {
-  height: 34px;
+  height: 41px;
+  font-size: 18px;
   display: none;
 
   @include md {
-    display: inline;
+    display: inline-block;
     width: 315px;
   }
 

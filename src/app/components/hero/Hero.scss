@@ -3,13 +3,13 @@
 
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: 696px;
   position: relative;
   background-color: aqua;
 
   @include flex-center(column);
   .background {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: absolute;
     z-index: 0;
@@ -50,25 +50,26 @@
   @include flex-center(column);
   background-color: rgba($white, 0.88);
   z-index: 1;
-  padding: 40px;
-  max-width: 781px;
+  width: 781px;
   & h1 {
     font-family: HelveticaNeue;
     font-size: 35px;
     font-weight: 100;
-    line-height: 1;
     letter-spacing: 1.97px;
     text-align: center;
-    margin: 10px;
-    width: 70%;
+    margin-top: 41px;
+    width: 437px;
   }
 }
 
 .hero-input {
   width: 315px;
   height: 34px;
-
+  margin-top: 18px;
+  margin-bottom: 42px;
   @include md {
-    width: 415px;
+    width: 511px;
+    height: 48px;
+    font-size: 22px;
   }
 }

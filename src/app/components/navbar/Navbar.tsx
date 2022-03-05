@@ -19,8 +19,8 @@ function Navbar() {
           className="navbar-input"
           placeHolder="Search for restaurant cuisine, chef"
         ></Input>
-        <Icon url="/icons/user-icon.svg"></Icon>
-        <Icon url="/icons/bag-icon.svg"></Icon>
+        <Icon url="/icons/user-icon.svg" size={22}></Icon>
+        <Icon url="/icons/bag-icon.svg" size={22}></Icon>
       </div>
     </div>
   );

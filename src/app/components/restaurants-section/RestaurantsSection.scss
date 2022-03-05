@@ -3,6 +3,11 @@
 
 .restaurants-inner-container {
   width: 100%;
+  margin-top: 140px;
+  padding: 0 20px;
+  @include md {
+    padding: 0 169px;
+  }
 }
 
 .restaurant-footer {
@@ -15,10 +20,6 @@
     span {
       font-family: HelveticaNeue;
       font-size: 30px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
       letter-spacing: 2px;
       text-align: center;
       color: $black;

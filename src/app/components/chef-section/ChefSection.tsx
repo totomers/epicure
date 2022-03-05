@@ -9,7 +9,7 @@ function ChefSection() {
   const firstName = c1.name.split(" ")[0];
 
   return (
-    <div className="section chef-section">
+    <div className="section  chef-section">
       <Title>CHEF OF THE WEEK:</Title>
       <div className="about-chef-section">
         <ImageWithLabel url={c1.url} label={c1.name}></ImageWithLabel>

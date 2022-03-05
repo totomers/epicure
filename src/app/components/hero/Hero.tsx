@@ -11,7 +11,7 @@ function Hero() {
           <h1>Epicure works with the top chef restaurants in Tel Aviv</h1>
           <Input
             iconUrl="/icons/search-icon.svg"
-            iconSize={22}
+            iconSize={31}
             iconDirection={"left"}
             className="hero-input"
             placeHolder="Search for restaurant cuisine, chef"

@@ -6,7 +6,7 @@ import Title from "../UI/title/Title";
 import "./RestaurantsSection.scss";
 function RestaurantsSection() {
   return (
-    <div className="section">
+    <div className="section center">
       <div className="restaurants-inner-container">
         <Title> THE POPULAR RESTAURANTS IN EPICURE :</Title>
         <Carousel>
