@@ -7,10 +7,20 @@
     @content;
   }
 }
+@mixin max-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
 
 // Medium devices
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin max-md {
+  @media (max-width: #{$screen-md-min}) {
     @content;
   }
 }

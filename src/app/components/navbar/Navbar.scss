@@ -2,8 +2,11 @@
 @import "../../../styles/colors.scss";
 
 .navbar {
-  @include flex-around();
   width: 100vw;
+  @include flex-between();
+  @include md() {
+    @include flex-around();
+  }
 }
 
 .left-navbar {
@@ -17,9 +20,7 @@
   }
 }
 .routes {
-  display: none;
   @include md {
-    display: block;
     @include flex-around();
   }
   & > * {
@@ -34,7 +35,7 @@
 .navbar-input {
   height: 41px;
   font-size: 18px;
-  display: none;
+  // display: none;
 
   @include md {
     display: inline-block;
