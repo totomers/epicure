@@ -10,7 +10,9 @@ function RestaurantsSection() {
     <div className="section center">
       <Marginer height={140}></Marginer>
       <div className="restaurants-inner-container">
-        <Title> THE POPULAR RESTAURANTS IN EPICURE :</Title>
+        <Title customClass="restaurant-title-mobile">
+          THE POPULAR RESTAURANTS IN EPICURE :
+        </Title>
         <Marginer height={42}></Marginer>
         <Carousel>
           {restaurants.map((r) => (

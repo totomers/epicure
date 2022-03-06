@@ -15,8 +15,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      {/* <RestaurantsSection />
-      <DishesSection />
+      <RestaurantsSection />
+      {/* <DishesSection />
       <IconSection />
       <ChefSection />
       <AboutUs />
