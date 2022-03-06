@@ -4,7 +4,6 @@
 .navbar {
   @include flex-around();
   width: 100vw;
-  padding: 10px;
 }
 
 .left-navbar {

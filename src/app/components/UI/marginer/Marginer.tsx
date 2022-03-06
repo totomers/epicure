@@ -5,7 +5,7 @@ interface IPropsMarginer {
 }
 
 function Marginer(props: IPropsMarginer) {
-  return <div style={{ height: props.height }}></div>;
+  return <div style={{ height: props.height, width: "100%" }}></div>;
 }
 
 export default Marginer;
