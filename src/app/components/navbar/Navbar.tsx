@@ -10,15 +10,22 @@ function Navbar() {
     <>
       <Marginer height={14}></Marginer>
 
-      <div className="navbar">
+      <div className="navbar relative-parent">
         <div className="left-navbar">
-          <Logo></Logo>
-          <div className="hide-for-mobile">
-            <Routes></Routes>
+          <div className="hide-for-non-mobile center-row">
+            <Icon size={19} url={"/icons/hamburger-icon.svg"}></Icon>
+          </div>
+          <div className="hide-for-mobile ">
+            <div className="center-row">
+              <Logo></Logo>
+              <Routes></Routes>
+            </div>
           </div>
         </div>
-        <div className="absolute hide-for-non-mobile">
-          <Logo></Logo>
+        <div className="absolute-layer center-row hide-for-non-mobile ">
+          <div className="hide-for-non-mobile">
+            <Icon url="/icons/epicure-icon.png" size={31}></Icon>
+          </div>
         </div>
         <div className="right-navbar">
           <Input
