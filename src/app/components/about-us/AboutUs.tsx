@@ -7,6 +7,7 @@ import Title from "../UI/title/Title";
 import "./AboutUs.scss";
 
 function AboutUs() {
+  //Adding this so I can create a pull request
   return (
     <div className="section ">
       <Marginer height={117}></Marginer>
