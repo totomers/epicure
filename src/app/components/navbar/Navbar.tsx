@@ -13,7 +13,10 @@ function Navbar() {
       <div className="navbar relative-parent">
         <div className="left-navbar">
           <div className="hide-for-non-mobile center-row">
-            <Icon size={19} url={"/icons/hamburger-icon.svg"}></Icon>
+            <Icon
+              customClass="left-nav-icon"
+              url={"/icons/hamburger-icon.svg"}
+            ></Icon>
           </div>
           <div className="hide-for-mobile ">
             <div className="center-row">
@@ -24,12 +27,13 @@ function Navbar() {
         </div>
         <div className="absolute-layer center-row hide-for-non-mobile ">
           <div className="hide-for-non-mobile">
-            <Icon url="/icons/epicure-icon.png" size={31}></Icon>
+            <Icon url="/icons/epicure-icon-small@3x.png" size={31}></Icon>
           </div>
         </div>
         <div className="right-navbar">
           <Input
             iconUrl="/icons/search-icon.svg"
+            iconCustomClass={"right-nav-icon"}
             iconSize={22}
             iconDirection={"right"}
             className="navbar-input hide-for-mobile"
@@ -37,12 +41,14 @@ function Navbar() {
           ></Input>
           <Icon
             url="/icons/search-icon.svg"
-            size={22}
-            customClass={"hide-for-non-mobile"}
+            customClass={"hide-for-non-mobile right-nav-icon"}
           ></Icon>
 
-          <Icon url="/icons/user-icon.svg" size={22}></Icon>
-          <Icon url="/icons/bag-icon.svg" size={22}></Icon>
+          <Icon
+            url="/icons/user-icon.svg"
+            customClass={"right-nav-icon"}
+          ></Icon>
+          <Icon url="/icons/bag-icon.svg" customClass={"right-nav-icon"}></Icon>
         </div>
       </div>
       <Marginer height={14}></Marginer>

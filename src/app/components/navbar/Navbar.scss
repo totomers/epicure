@@ -39,7 +39,7 @@
 }
 
 .navbar-input {
-  height: 41px;
+  height: 34px;
   font-size: 18px;
   // display: none;
 
@@ -51,4 +51,17 @@
   @include lg {
     width: 415px;
   }
+}
+
+.right-nav-icon {
+  height: 15px;
+  width: auto;
+
+  @include md() {
+    height: 22px;
+  }
+}
+.left-nav-icon {
+  height: 14px;
+  width: auto;
 }

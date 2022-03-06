@@ -13,8 +13,8 @@ function Icon(props: IPropsIcon) {
   return (
     <img
       src={url}
-      className={customClass}
-      style={{ height: size, width: "auto", ...style }}
+      style={{ ...style }}
+      className={`default ${customClass}`}
     ></img>
   );
 }

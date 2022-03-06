@@ -3,6 +3,7 @@ import Icon from "../icon/Icon";
 import "./Input.scss";
 interface IPropsInput {
   iconUrl?: string;
+  iconCustomClass?: string;
   iconSize?: number;
   iconDirection?: "right" | "left";
   type?: string;
@@ -16,6 +17,7 @@ function Input(props: IPropsInput) {
     iconSize = 0,
     type = "text",
     iconDirection = "left",
+    iconCustomClass,
     className,
     placeHolder,
   } = props;
@@ -33,7 +35,7 @@ function Input(props: IPropsInput) {
         type={type}
         placeholder={placeHolder}
         style={{
-          padding: `${padding}px ${rightPadding}px ${padding}px ${leftPadding}px `,
+          padding: `0px ${rightPadding}px 0px ${leftPadding}px `,
         }}
       ></input>
       {iconUrl && (
@@ -41,6 +43,7 @@ function Input(props: IPropsInput) {
           <Icon
             url={iconUrl}
             size={iconSize}
+            customClass={iconCustomClass}
             style={{
               marginRight: `15px`,
               marginLeft: `15px`,
