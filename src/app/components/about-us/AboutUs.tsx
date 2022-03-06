@@ -11,6 +11,7 @@ function AboutUs() {
     <div className="section ">
       <Marginer height={117}></Marginer>
       <div className="about-us-section start grey">
+        <Marginer height={65}></Marginer>
         <Title align="start"> ABOUT US :</Title>
         <Marginer height={20}></Marginer>
         <div className="text-logo-container">

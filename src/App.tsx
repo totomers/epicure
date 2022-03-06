@@ -11,6 +11,7 @@ import AboutUs from "./app/components/about-us/AboutUs";
 import Footer from "./app/components/footer/Footer";
 
 function App() {
+  console.log("hi");
   return (
     <div>
       <Navbar />
