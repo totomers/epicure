@@ -43,7 +43,7 @@ function Card(props: IPropsCard) {
       )}
 
       <div className={`card ${size}`}>
-        <img src={url} className={`card-image  `}></img>
+        <img src={url} className={`card-image ${size} `}></img>
         <Marginer height={15}></Marginer>
         <div className={`card-title ${size}`}>{title}</div>
         <Marginer height={9.8}></Marginer>
