@@ -1,0 +1,24 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/colors.scss";
+.routes-mobile-block {
+  width: 100%;
+  height: 125px;
+  opacity: 0.9;
+  background-color: #fafafa;
+}
+
+.hero-routes {
+  width: 100%;
+  @include flex-center();
+  flex-direction: row-reverse;
+}
+
+.hero-route-item {
+  height: 43px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  letter-spacing: 0.93px;
+  margin-left: 17px;
+  background-color: $sand;
+  padding: 15px;
+}

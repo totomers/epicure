@@ -3,10 +3,14 @@
 
 .hero {
   width: 100vw;
-  height: 696px;
-  position: relative;
-  background-color: aqua;
 
+  position: relative;
+
+  height: 269px;
+
+  @include md() {
+    height: 696px;
+  }
   @include flex-center(column);
   .background {
     height: 100%;
@@ -15,61 +19,57 @@
     z-index: 0;
   }
 }
-.routes-mobile-block {
-  width: 100%;
-  height: 125px;
-  opacity: 0.9;
-  background-color: #fafafa;
-  display: inline-block;
-  @include flex-around();
-
-  @include md {
-    display: none;
-  }
-  //   .routes {
-  //     z-index: 1;
-  //     display: inline-block;
-  //     background-color: blue;
-  //   }
-
-  //   .route-item {
-  //     width: 131px;
-  //     height: 43px;
-  //     margin: 0 0 0 17px;
-  //     padding: 15px 14px 13px;
-  //     background-color: $sand;
-  //     font-family: HelveticaNeue;
-  //     font-weight: 200;
-  //     font-size: 16px;
-  //     letter-spacing: 0.93px;
-  //     @include flex-center();
-  //   }
-}
 
 .hero-card {
   @include flex-center(column);
   background-color: rgba($white, 0.88);
   z-index: 1;
-  width: 781px;
+  width: 335px;
+  @include md() {
+    width: 781px;
+  }
   & h1 {
     font-family: HelveticaNeue;
-    font-size: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
     font-weight: 100;
-    letter-spacing: 1.97px;
     text-align: center;
-    margin-top: 41px;
-    width: 437px;
+    width: 212px;
+    margin-top: 18px;
+    @include md() {
+      margin-top: 36px;
+      font-size: 35px;
+      letter-spacing: 1.97px;
+      width: 437px;
+    }
   }
 }
 
 .hero-input {
-  width: 315px;
+  width: 269px;
   height: 34px;
-  margin-top: 18px;
-  margin-bottom: 42px;
+  margin-top: 13px;
+  opacity: 0.64;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 0.93px;
+  margin-bottom: 22px;
+
   @include md {
     width: 511px;
     height: 48px;
     font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 42px;
+
+    opacity: 1;
+  }
+}
+
+.hero-search-icon {
+  height: 16px;
+  @include md() {
+    height: 31px;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Routes from "../navbar/subcomponents/Routes";
 import Input from "../UI/input/Input";
 import "./Hero.scss";
+import HeroRoutes from "./subcomponents/HeroRoutes";
 function Hero() {
   return (
     <>
@@ -13,14 +14,15 @@ function Hero() {
             iconUrl="/icons/search-icon.svg"
             iconSize={31}
             iconDirection={"left"}
+            iconCustomClass={"hero-search-icon"}
             className="hero-input"
             placeHolder="Search for restaurant cuisine, chef"
           ></Input>
         </div>
       </div>
 
-      <div className="routes-mobile-block">
-        <Routes />
+      <div className="hide-for-non-mobile">
+        <HeroRoutes></HeroRoutes>
       </div>
     </>
   );

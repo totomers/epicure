@@ -2,14 +2,31 @@
 @import "../../../styles/colors.scss";
 
 .chef-section {
-  padding: 0 218px;
+  padding: 0 20px;
+  margin-top: 71px;
+  @include md() {
+    margin-top: 100px;
+    padding: 0 218px;
+  }
 }
+
+// .chef-section-title {
+//   margin-top: 71px;
+//   @include md() {
+//     margin-top: 100px;
+//   }
+// }
 
 .image-container {
   position: relative;
   img {
-    width: 433px;
+    width: 334px;
+
     height: auto;
+
+    @include md() {
+      width: 433px;
+    }
   }
   div {
     position: absolute;
@@ -22,16 +39,22 @@
     opacity: 0.9;
     span {
       font-family: HelveticaNeue;
-      font-size: 40px;
+      font-size: 30px;
       letter-spacing: 1.43px;
       text-align: center;
-      color: $black;
+      @include md() {
+        font-size: 40px;
+      }
     }
   }
 }
 
 .about-chef-section {
+  margin-top: 16px;
+
   @include md() {
+    margin-top: 42px;
+
     @include flex-between();
     align-items: start;
   }
@@ -42,17 +65,32 @@
 
 .chef-description {
   flex: 1;
-  margin-left: 60px;
-  width: 540px;
-  height: 292px;
+  font-size: 13.5px;
   font-family: HelveticaNeue;
-  font-size: 25px;
-  font-weight: 100;
   letter-spacing: 1.08px;
   text-align: justify;
-  color: $black;
+  font-weight: 100;
+  margin-top: 21.6px;
+  text-align: center;
+  @include md() {
+    margin-top: 0px;
+    margin-left: 60px;
+    width: 540px;
+    height: 292px;
+    font-size: 25px;
+    letter-spacing: 1.08px;
+  }
 }
 
 .chef-restaurants-section {
+  margin-top: 25px;
   width: 70%;
+
+  @include md() {
+    margin-top: 59px;
+  }
+}
+
+.align-left {
+  @include flex-start();
 }

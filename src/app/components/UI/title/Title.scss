@@ -6,12 +6,15 @@
   width: 100%;
   h1 {
     font-family: HelveticaNeue;
-    font-size: 30px;
+    font-size: 14px;
     font-weight: 100;
     line-height: 1.33;
     // letter-spacing: 1.25px;
     text-align: center;
     color: $black;
+    @include md() {
+      font-size: 30px;
+    }
   }
   &.start {
     @include flex-start();

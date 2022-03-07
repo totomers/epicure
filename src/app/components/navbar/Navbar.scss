@@ -2,26 +2,33 @@
 @import "../../../styles/colors.scss";
 
 .navbar {
-  @include flex-around();
   width: 100vw;
+  @include flex-between();
+  @include md() {
+    @include flex-around();
+  }
 }
 
 .left-navbar {
   @include flex-center();
+  margin-left: 20px;
 }
+
 .right-navbar {
   @include flex-center();
   width: 40%;
   & > * {
     margin-left: 31px;
   }
+  &:last-child {
+    margin-left: 20px;
+  }
 }
 .routes {
-  display: none;
-  @include md {
-    display: block;
-    @include flex-around();
-  }
+  // @include md {
+  // }
+  @include flex-center();
+
   & > * {
     margin-left: 28px;
   }
@@ -32,9 +39,9 @@
 }
 
 .navbar-input {
-  height: 41px;
+  height: 34px;
   font-size: 18px;
-  display: none;
+  // display: none;
 
   @include md {
     display: inline-block;
@@ -44,4 +51,17 @@
   @include lg {
     width: 415px;
   }
+}
+
+.right-nav-icon {
+  height: 15px;
+  width: auto;
+
+  @include md() {
+    height: 22px;
+  }
+}
+.left-nav-icon {
+  height: 14px;
+  width: auto;
 }

@@ -16,4 +16,38 @@
   &.center-row {
     @include flex-center();
   }
+  overflow-x: hidden;
+}
+
+.hide-for-mobile {
+  @include max-sm() {
+    display: none;
+    & > * {
+      display: none;
+    }
+  }
+}
+
+.hide-for-non-mobile {
+  @include sm() {
+    display: none;
+    & > * {
+      display: none;
+    }
+  }
+}
+.relative-parent {
+  position: relative;
+}
+
+.absolute-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.center-row {
+  @include flex-center();
 }

@@ -9,11 +9,18 @@ import "./AboutUs.scss";
 function AboutUs() {
   return (
     <div className="section ">
-      <Marginer height={117}></Marginer>
       <div className="about-us-section start grey">
-        <Marginer height={65}></Marginer>
-        <Title align="start"> ABOUT US :</Title>
-        <Marginer height={20}></Marginer>
+        {/* <Marginer height={65}></Marginer> */}
+        <div className="hide-for-mobile">
+          <Title align="start" customClass="about-us-section-title">
+            ABOUT US :
+          </Title>
+        </div>
+        <div className="hide-for-non-mobile">
+          <Title align="center" customClass="about-us-section-title">
+            ABOUT US :
+          </Title>
+        </div>
         <div className="text-logo-container">
           <div className="text">
             <p>
@@ -35,14 +42,22 @@ function AboutUs() {
           </div>
         </div>
         <div className="buttons-container">
-          <Button icon="/icons/apple-icon.svg">
+          <Button
+            icon="/icons/apple-icon.svg"
+            iconCustomClass={"about-apple-icon"}
+            customClass={"about-button"}
+          >
             <span className="Download-on-the-App">
-              Download on the<span className="text-style-1">App Store</span>
+              Download on the<span className="bigger">App Store</span>
             </span>
           </Button>
-          <Button icon="/icons/play-icon.svg">
+          <Button
+            icon="/icons/play-icon.svg"
+            iconCustomClass={"about-play-icon"}
+            customClass={"about-button"}
+          >
             <span className="Get-it-on-Google-Pla">
-              <span className="text-style-1">Get it on</span>Google Play
+              <span className="bigger">Get it on</span>Google Play
             </span>
           </Button>
         </div>
