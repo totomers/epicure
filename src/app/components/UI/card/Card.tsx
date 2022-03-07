@@ -50,7 +50,7 @@ function Card(props: IPropsCard) {
         <div className={`card-subtitle ${long ? "long" : ""}`}>{subtitle}</div>
         <Marginer height={25}></Marginer>
         <div className={`logo-bar ${long ? "long" : ""}`}>
-          {logo && <Icon size={logoSize} url={logo}></Icon>}
+          {logo && <Icon url={logo}></Icon>}
         </div>
 
         {price && (
