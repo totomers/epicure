@@ -12,6 +12,7 @@ interface IPropsCard {
   logo?: string;
   logoSize?: number;
   price?: number;
+  margin?: number;
   size?: "default" | "small";
 }
 
@@ -27,9 +28,13 @@ function Card(props: IPropsCard) {
     logoSize,
     long = false,
     size = "default",
+    margin,
   } = props;
   return (
-    <div className={`card-container ${className}`}>
+    <div
+      className={`card-container ${className}`}
+      style={{ marginLeft: `${margin}px`, marginRight: `${margin}px` }}
+    >
       {hoverTitle && (
         <>
           <div className="hover-title">{hoverTitle}</div>
@@ -41,7 +46,7 @@ function Card(props: IPropsCard) {
         <img src={url} className={`card-image  `}></img>
         <Marginer height={15}></Marginer>
         <div className={`card-title ${size}`}>{title}</div>
-        <Marginer height={3.8}></Marginer>
+        <Marginer height={9.8}></Marginer>
         <div className={`card-subtitle ${long ? "long" : ""}`}>{subtitle}</div>
         <Marginer height={25}></Marginer>
         <div className={`logo-bar ${long ? "long" : ""}`}>

@@ -9,9 +9,7 @@ import "./DishesSection.scss";
 function DishesSection() {
   return (
     <div className="section dishes-section">
-      <Marginer height={87}></Marginer>
-      <Title>SIGNATURE DISH OF :</Title>
-      <Marginer height={42}></Marginer>
+      <Title customClass="dishes-title">SIGNATURE DISH OF :</Title>
       <Carousel>
         {dishes.map((d) => (
           <Card
@@ -24,6 +22,7 @@ function DishesSection() {
             logo={d.logo}
             long={true}
             logoSize={39}
+            margin={5}
           ></Card>
         ))}
       </Carousel>

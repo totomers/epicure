@@ -16,11 +16,11 @@ function App() {
       <Navbar />
       <Hero />
       <RestaurantsSection />
-      {/* <DishesSection />
+      <DishesSection />
       <IconSection />
       <ChefSection />
       <AboutUs />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

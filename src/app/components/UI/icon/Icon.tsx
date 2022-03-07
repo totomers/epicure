@@ -9,7 +9,7 @@ interface IPropsIcon {
 }
 
 function Icon(props: IPropsIcon) {
-  const { url = "", size = 30, style, customClass } = props;
+  const { url = "", style, customClass } = props;
   return (
     <img
       src={url}

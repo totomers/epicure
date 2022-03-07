@@ -99,3 +99,101 @@
     #{$value} * (clamp(#{$min}, 100vw, #{$max}) / #{$idealViewportWidth})
   );
 }
+
+@mixin textStyle1() {
+  font-family: HelveticaNeue;
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.67px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle2() {
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.92px;
+  color: $black;
+}
+@mixin textStyle3() {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle4() {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.93px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle5() {
+  font-family: HelveticaNeue;
+  font-size: 11.8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle6() {
+  font-family: HelveticaNeue;
+  font-size: 27px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  color: $black;
+}
+@mixin textStyle7() {
+  font-family: HelveticaNeue;
+  font-size: 35px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.97px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle8() {
+  font-family: HelveticaNeue;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.67px;
+  text-align: center;
+  color: $black;
+}
+@mixin textStyle9() {
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 1.25px;
+  text-align: center;
+  color: $black;
+} ;
