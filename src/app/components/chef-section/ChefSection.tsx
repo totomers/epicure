@@ -21,9 +21,19 @@ function ChefSection() {
       <div className="chef-restaurants-section">
         <Title align="start">{firstName + "'s restaurants: "}</Title>
         <Marginer height={23}></Marginer>
-        <Carousel customClass="align-left">
+        <Carousel
+          customClass="align-left"
+          slidesToShow={3}
+          slidesToShowMobiles={2.1}
+        >
           {c1.restaurants.map((r) => (
-            <Card key={r.name} url={r.url} title={r.name} size={"small"}></Card>
+            <Card
+              key={r.name}
+              url={r.url}
+              title={r.name}
+              size={"small"}
+              margin={13.3}
+            ></Card>
           ))}
         </Carousel>
       </div>

@@ -84,9 +84,10 @@
 
 .chef-restaurants-section {
   margin-top: 25px;
-  width: 70%;
-
+  width: 100%;
   @include md() {
+    width: 70%;
+
     margin-top: 59px;
   }
 }
