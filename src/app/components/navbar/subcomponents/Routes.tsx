@@ -1,9 +1,18 @@
 import React from "react";
 import { IRoute } from "../../../../interfaces/route.interface";
 import { routes } from "../../../../_mock-data.ts/routes.data";
-
+import "./Routes.scss";
+import { Link } from "react-router-dom";
 function RouteItem(props: { route: IRoute }) {
-  return <div className="route-item Text-Style-2"> {props.route.label}</div>;
+  return (
+    <Link
+      style={{ textDecoration: "none" }}
+      to={props.route.path}
+      className="route-item Text-Style-2"
+    >
+      {props.route.label}
+    </Link>
+  );
 }
 
 function Routes() {

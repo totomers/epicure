@@ -3,6 +3,7 @@
 
 .logo {
   @include flex-center();
+  z-index: 3;
 }
 
 .EPICURE {

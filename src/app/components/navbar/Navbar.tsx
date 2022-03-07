@@ -5,6 +5,7 @@ import Routes from "./subcomponents/Routes";
 import "./Navbar.scss";
 import Icon from "../UI/icon/Icon";
 import Marginer from "../UI/marginer/Marginer";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
@@ -20,7 +21,13 @@ function Navbar() {
           </div>
           <div className="hide-for-mobile ">
             <div className="center-row">
-              <Logo></Logo>
+              <Link
+                style={{ textDecoration: "none" }}
+                to={"/"}
+                className={"logo-home-link"}
+              >
+                <Logo></Logo>
+              </Link>
               <Routes></Routes>
             </div>
           </div>

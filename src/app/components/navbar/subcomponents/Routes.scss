@@ -1,0 +1,35 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/colors.scss";
+
+.routes {
+  // @include md {
+  // }
+  @include flex-center();
+
+  & > * {
+    margin-left: 28px;
+  }
+}
+.route-item {
+  letter-spacing: 1.92px;
+
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 3;
+  overflow: hidden;
+  transition: 0.1s ease-in-out;
+  text-align: center;
+  //   box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+  //     -6px -6px 10px rgba(255, 255, 255, 0.5),
+  //     6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+  user-select: none;
+  &:hover {
+    box-shadow: 7px 7px 14px #d4d4d4, -7px -7px 14px #ffffff;
+    transform: translateX(-10px);
+  }
+  &:active {
+    box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #ffffff;
+  }
+}

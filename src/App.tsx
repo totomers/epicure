@@ -1,27 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.scss";
 import Navbar from "./app/components/navbar/Navbar";
-import Hero from "./app/components/hero/Hero";
-import RestaurantsSection from "./app/components/restaurants-section/RestaurantsSection";
-import DishesSection from "./app/components/dishes-section/DishesSection";
-import IconSection from "./app/components/icon-section/IconSection";
-import ChefSection from "./app/components/chef-section/ChefSection";
-import AboutUs from "./app/components/about-us/AboutUs";
-import Footer from "./app/components/footer/Footer";
-
+import ChefsPage from "./app/pages/ChefsPage";
+import HomePage from "./app/pages/HomePage";
+import RestaurantsPage from "./app/pages/RestaurantsPage";
 function App() {
-  console.log("hi");
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <RestaurantsSection />
-      <DishesSection />
-      <IconSection />
-      <ChefSection />
-      <AboutUs />
-      <Footer />
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="restaurants" element={<RestaurantsPage />} />
+        <Route path="chefs" element={<ChefsPage />} />
+      </Routes>
     </div>
   );
 }

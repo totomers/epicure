@@ -24,19 +24,6 @@
     margin-left: 20px;
   }
 }
-.routes {
-  // @include md {
-  // }
-  @include flex-center();
-
-  & > * {
-    margin-left: 28px;
-  }
-}
-.route-item {
-  letter-spacing: 1.92px;
-  width: 110px;
-}
 
 .navbar-input {
   height: 34px;
@@ -64,4 +51,8 @@
 .left-nav-icon {
   height: 14px;
   width: auto;
+}
+
+.logo-home-link {
+  z-index: 10;
 }
