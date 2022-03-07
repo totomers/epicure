@@ -1,0 +1,47 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.restaurant-section {
+  margin-top: 51px;
+  @include md() {
+    margin-top: 140;
+  }
+}
+
+.carousel-container {
+  margin-top: 13px;
+  @include md() {
+    margin-top: 42px;
+  }
+}
+.restaurants-inner-container {
+  width: 100%;
+  padding: 0 20px;
+  @include md {
+    padding: 0 169px;
+  }
+}
+.restaurant-title-mobile {
+  @include max-md() {
+    h1 {
+      letter-spacing: 0.93px;
+    }
+  }
+}
+.restaurant-footer {
+  @include flex-center();
+  transform: translateX(30%);
+  button {
+    all: unset;
+    cursor: pointer;
+    @include flex-center();
+    span {
+      font-family: HelveticaNeue;
+      font-size: 30px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: $black;
+      margin: 0 10px;
+    }
+  }
+}

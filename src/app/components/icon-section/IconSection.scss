@@ -1,0 +1,66 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/mixins.scss";
+
+.grey {
+  background-color: $lightGrey;
+}
+
+.icon-section {
+  margin-top: 95.1px;
+  @include md() {
+    margin-top: 87px;
+  }
+}
+
+.icons-title {
+  margin-top: 41px;
+  @include max-md() {
+    margin-top: 16px;
+    h1 {
+      font-size: 14px;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.icons-container {
+  margin-top: 22px;
+  width: 100%;
+  margin-bottom: 13px;
+
+  // margin-right: 509.6px;
+  // margin-left: 507px;
+  @include flex-center();
+  @include md() {
+    margin-top: 29.4px;
+    margin-bottom: 41.6px;
+  }
+}
+
+.icon-item {
+  @include flex-around(column);
+  margin-left: 50px;
+  &:last-child {
+    margin-right: 50px;
+  }
+
+  span {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1.94px;
+    text-align: center;
+
+    @include md() {
+      font-size: 25.2px;
+    }
+  }
+}
+
+.icon-icon {
+  height: 34px;
+  @include md() {
+    height: 60px;
+  }
+}

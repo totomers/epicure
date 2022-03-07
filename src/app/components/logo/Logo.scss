@@ -1,0 +1,36 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.logo {
+  @include flex-center();
+}
+
+.EPICURE {
+  width: 115px;
+  height: 32px;
+  margin: 1px 0 1px 15px;
+  font-family: HelveticaNeue;
+  font-size: 27px;
+  font-weight: 100;
+  color: $black;
+  display: none;
+  @include md() {
+    // display: inline-block;
+    width: 115px;
+    height: 32px;
+    margin: 1px 0 1px 15px;
+    font-family: HelveticaNeue;
+    font-size: 27px;
+    font-weight: 100;
+  }
+}
+
+.logo-img {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+  &.large {
+    width: 178px;
+    height: 166px;
+  }
+}
