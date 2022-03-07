@@ -29,7 +29,8 @@
   }
 }
 .restaurant-footer {
-  @include flex-end();
+  @include flex-center();
+  transform: translateX(30%);
   button {
     all: unset;
     cursor: pointer;
