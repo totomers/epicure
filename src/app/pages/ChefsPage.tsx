@@ -1,8 +1,13 @@
 import React from "react";
 import AnimatePage from "../utils/AnimatePage";
+import PageAnimator from "../utils/PageAnimator";
 
 function ChefsPage() {
-  return <AnimatePage>CHEF PAGE</AnimatePage>;
+  return (
+    <PageAnimator>
+      <div className=" section center">CHEFS PAGE</div>
+    </PageAnimator>
+  );
 }
 
 export default ChefsPage;
