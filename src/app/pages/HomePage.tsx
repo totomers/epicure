@@ -7,10 +7,11 @@ import Hero from "../components/hero/Hero";
 import IconSection from "../components/icon-section/IconSection";
 import Navbar from "../components/navbar/Navbar";
 import RestaurantsSection from "../components/restaurants-section/RestaurantsSection";
+import AnimatePage from "../utils/AnimatePage";
 
 function HomePage() {
   return (
-    <div>
+    <AnimatePage>
       <Hero />
       <RestaurantsSection />
       <DishesSection />
@@ -18,7 +19,7 @@ function HomePage() {
       <ChefSection />
       <AboutUs />
       <Footer />
-    </div>
+    </AnimatePage>
   );
 }
 

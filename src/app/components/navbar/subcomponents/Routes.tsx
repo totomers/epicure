@@ -2,16 +2,25 @@ import React from "react";
 import { IRoute } from "../../../../interfaces/route.interface";
 import { routes } from "../../../../_mock-data.ts/routes.data";
 import "./Routes.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+
 function RouteItem(props: { route: IRoute }) {
+  const { path, label } = props.route;
   return (
-    <Link
+    <NavLink
       style={{ textDecoration: "none" }}
-      to={props.route.path}
-      className="route-item Text-Style-2"
+      key={path}
+      to={path}
+      className={({ isActive }) =>
+        isActive
+          ? "route-item Text-Style-2 active"
+          : " route-item Text-Style-2 inactive"
+      }
+      // exact={true}
     >
       {props.route.label}
-    </Link>
+    </NavLink>
   );
 }
 
