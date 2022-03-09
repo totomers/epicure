@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatePage from "../utils/AnimatePage";
 import PageAnimator from "../utils/PageAnimator";
 
 function ChefsPage() {

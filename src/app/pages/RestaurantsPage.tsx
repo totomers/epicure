@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import Button from "../components/UI/button/Button";
-import AnimatePage from "../utils/AnimatePage";
+import PageAnimator from "../utils/PageAnimator";
 function RestaurantsPage() {
   return (
-    <AnimatePage>
+    <PageAnimator>
       <Button>RESTAURANTS</Button>
-    </AnimatePage>
+    </PageAnimator>
   );
 }
 

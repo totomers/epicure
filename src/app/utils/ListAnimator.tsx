@@ -5,15 +5,16 @@ interface IPropsListAnimator {
   children: any[];
   className?: string;
 }
-type listItem = { delay: number; x: number };
+type ListItem = { delay: number; x: number };
 
 function ListAnimator(props: IPropsListAnimator) {
   const { children, className } = props;
 
-  const [items, setItems] = useState([{ delay: 0 }]);
+  const [items, setItems] = useState([]);
   const transition = useTransition(items, {
     from: { x: -100, opacity: 0 },
-    enter: (item) => (next) => next({ x: 0, opacity: 1, delay: item.delay }),
+    enter: (item: ListItem) => (next) =>
+      next({ x: 0, opacity: 1, delay: item.delay }),
     leave: { x: -100, opacity: 0 },
   });
 
@@ -22,7 +23,9 @@ function ListAnimator(props: IPropsListAnimator) {
       (item, index) => {
         return { delay: index * (index + 200), x: index * (index - 100) };
       }
-    );
+    ) as any;
+    console.log(listItems);
+
     setItems(listItems);
   }, []);
 

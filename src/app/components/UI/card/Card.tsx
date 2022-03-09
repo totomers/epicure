@@ -42,10 +42,15 @@ function Card(props: IPropsCard) {
         </>
       )}
 
-      <div className={`card ${size}`}>
-        <img src={url} className={`card-image ${size} `}></img>
+      <div className={`card ${size} ${long ? "long" : ""} `}>
+        <img
+          src={url}
+          className={`card-image ${size} ${long ? "long" : ""} `}
+        ></img>
         <Marginer height={15}></Marginer>
-        <div className={`card-title ${size}`}>{title}</div>
+        <div className={`card-title ${size} ${long ? "long" : ""}`}>
+          {title}
+        </div>
         <Marginer height={9.8}></Marginer>
         <div className={`card-subtitle ${long ? "long" : ""}`}>{subtitle}</div>
         <Marginer height={25}></Marginer>

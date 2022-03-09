@@ -10,7 +10,7 @@ function DishesSection() {
   return (
     <div className="section dishes-section">
       <Title customClass="dishes-title">SIGNATURE DISH OF :</Title>
-      <Carousel>
+      <Carousel slidesToShowMobiles={1.2}>
         {dishes.map((d) => (
           <Card
             key={d.name}

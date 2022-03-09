@@ -1,12 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
 import "./App.scss";
 import Navbar from "./app/components/navbar/Navbar";
 import ChefsPage from "./app/pages/ChefsPage";
 import HomePage from "./app/pages/HomePage";
 import RestaurantsPage from "./app/pages/RestaurantsPage";
-import AnimatePage from "./app/utils/AnimatePage";
 
 export const routes = [
   { path: "/", label: "Home", Component: HomePage },

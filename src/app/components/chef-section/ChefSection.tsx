@@ -24,7 +24,7 @@ function ChefSection() {
         <Carousel
           customClass="align-left"
           slidesToShow={3}
-          slidesToShowMobiles={2.1}
+          slidesToShowMobiles={2}
         >
           {c1.restaurants.map((r) => (
             <Card
