@@ -1,0 +1,15 @@
+@import "../../../../styles/mixins.scss";
+.carousel {
+  min-width: 100%;
+  overflow-x: hidden;
+  margin-left: 0;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.right {
+  @include flex-center();
+  justify-content: end;
+}

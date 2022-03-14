@@ -1,0 +1,9 @@
+@import "../../../../styles/mixins.scss";
+
+.list {
+  @include flex-center(column);
+  & > * {
+    margin-bottom: 30px;
+  }
+  border-radius: 8px;
+}

@@ -1,0 +1,76 @@
+@import "../../../styles//mixins.scss";
+@import "../../../styles//colors.scss";
+
+.hero {
+  width: 100vw;
+
+  position: relative;
+
+  height: 269px;
+
+  @include md() {
+    height: 696px;
+  }
+  @include flex-center(column);
+  .background {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+  }
+}
+
+.hero-card {
+  @include flex-center(column);
+  background-color: rgba($white, 0.88);
+  z-index: 1;
+  width: 335px;
+  @include md() {
+    width: 781px;
+  }
+  & h1 {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-align: center;
+    width: 212px;
+    margin-top: 18px;
+    @include md() {
+      margin-top: 36px;
+      font-size: 35px;
+      letter-spacing: 1.97px;
+      width: 437px;
+    }
+  }
+}
+
+.hero-input {
+  width: 269px;
+  height: 34px;
+  margin-top: 13px;
+  opacity: 0.64;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 0.93px;
+  margin-bottom: 22px;
+
+  @include md {
+    width: 511px;
+    height: 48px;
+    font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 42px;
+
+    opacity: 1;
+  }
+}
+
+.hero-search-icon {
+  height: 16px;
+  @include md() {
+    height: 31px;
+  }
+}

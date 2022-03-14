@@ -1,0 +1,21 @@
+@import "../../../../styles/mixins.scss";
+
+.list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10%;
+  box-shadow: 1px 1px 2px 2px rgba(59, 59, 59, 0.486);
+  @include flex-center();
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .title {
+    font-family: HelveticaNeue;
+    font-weight: 100;
+    flex: 1;
+    @include flex-center();
+  }
+}

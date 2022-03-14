@@ -1,0 +1,211 @@
+@import "./breakpoints.scss";
+@import "./configVar.scss";
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin max-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin max-md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin max-xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin customScreen($screen) {
+  @media (min-width: ($screen+"px")) {
+    @content;
+  }
+}
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex-start($direction: row) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex-end($direction: row) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex-between($direction: row) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin flex-around($direction: row) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+/*
+  Declared a SCSS function that takes a value to be scaled and
+  ideal viewport width which I set to 1440px in the configVar file.
+
+  Now we can apply it to any numberic css value of a component like so: 
+  .myElement {
+  width: #{scaleValue(500)};
+  height: #{scaleValue(500)};
+  box-shadow: #{scaleValue(2)} #{scaleValue(2)} rgba(black, 0.5);
+  font-size: #{scaleValue(24)};
+}
+*/
+@function scaleValue(
+  $value,
+  $idealViewportWidth: $idealViewportWidth,
+  $min: 350px,
+  $max: 3840px
+) {
+  @return calc(
+    #{$value} * (clamp(#{$min}, 100vw, #{$max}) / #{$idealViewportWidth})
+  );
+}
+
+// @mixin textStyle1() {
+//   font-family: HelveticaNeue;
+//   font-size: 25px;
+//   font-weight: normal;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 1.67px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle2() {
+//   font-family: HelveticaNeue;
+//   font-size: 18px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 1.92px;
+//   color: $black;
+// }
+// @mixin textStyle3() {
+//   font-family: HelveticaNeue;
+//   font-size: 16px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 1px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle4() {
+//   font-family: HelveticaNeue;
+//   font-size: 14px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 0.93px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle5() {
+//   font-family: HelveticaNeue;
+//   font-size: 11.8px;
+//   font-weight: normal;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 0.9px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle6() {
+//   font-family: HelveticaNeue;
+//   font-size: 27px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 1.35px;
+//   color: $black;
+// }
+// @mixin textStyle7() {
+//   font-family: HelveticaNeue;
+//   font-size: 35px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1;
+//   letter-spacing: 1.97px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle8() {
+//   font-family: HelveticaNeue;
+//   font-size: 40px;
+//   font-weight: normal;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: normal;
+//   letter-spacing: 2.67px;
+//   text-align: center;
+//   color: $black;
+// }
+// @mixin textStyle9() {
+//   font-family: HelveticaNeue;
+//   font-size: 30px;
+//   font-weight: 100;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.33;
+//   letter-spacing: 1.25px;
+//   text-align: center;
+//   color: $black;
+// } ;

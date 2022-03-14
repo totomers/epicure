@@ -1,0 +1,132 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
+
+.about-us-section {
+  margin-top: 97.6px;
+  padding: 0 28px;
+  padding-bottom: 62px;
+  @include md() {
+    margin-top: 117px;
+    padding: 0 218px;
+    padding-bottom: 62px;
+  }
+}
+.about-us-section-title {
+  h1 {
+    margin-top: 28px;
+    @include md() {
+      margin-top: 117px;
+    }
+  }
+}
+
+.text-logo-container {
+  @include flex-center(column);
+  margin-top: 7px;
+  @include md() {
+    @include flex-between;
+    margin-top: 20px;
+  }
+
+  .text {
+    font-family: HelveticaNeue;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1.08px;
+    text-align: center;
+    font-size: 14px;
+
+    @include md() {
+      width: 650px;
+      font-size: 22px;
+      letter-spacing: 1.69px;
+
+      text-align: justify;
+    }
+  }
+
+  .logo {
+    margin-top: 32px;
+    width: 50%;
+    @include flex-center();
+    img {
+      width: 137px;
+      @include md() {
+        width: 178px;
+      }
+    }
+  }
+}
+.buttons-container {
+  @include flex-start();
+  & > * {
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+}
+.Download-on-the-App {
+  font-family: HelveticaNeue;
+  text-align: center;
+
+  width: 84px;
+  height: 25px;
+  font-size: 9.2px;
+  letter-spacing: 0.9px;
+  .bigger {
+    font-size: 11.8px;
+  }
+
+  @include flex-center(column);
+
+  @include md() {
+    width: 120px;
+    height: 36px;
+    font-size: 13.2px;
+    letter-spacing: 1.29px;
+    .bigger {
+      font-size: 16.8px;
+    }
+  }
+}
+
+.Get-it-on-Google-Pla {
+  width: 74px;
+  height: 25px;
+  font-family: HelveticaNeue;
+  font-size: 11.8px;
+
+  letter-spacing: 0.9px;
+  .bigger {
+    font-size: 9.2px;
+  }
+
+  @include flex-center(column);
+
+  @include md() {
+    width: 106px;
+    height: 36px;
+    font-size: 16.8px;
+    letter-spacing: 1.29px;
+    .bigger {
+      font-size: 13.2px;
+    }
+  }
+}
+
+.about-apple-icon {
+  @include max-md() {
+    height: 22px;
+  }
+}
+.about-play-icon {
+  @include max-md() {
+    height: 18px;
+  }
+}
+
+.about-button {
+  @include max-md() {
+    height: 36.8px;
+    padding: 0;
+  }
+}
