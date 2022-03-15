@@ -1,12 +1,12 @@
 import React from "react";
-import AboutUs from "../components/about-us/AboutUs";
-import ChefSection from "../components/chef-section/ChefSection";
-import DishesSection from "../components/dishes-section/DishesSection";
+import AboutUs from "../components/home/about-us/AboutUs";
+import ChefSection from "../components/home/chef-section/ChefSection";
+import DishesSection from "../components/home/dishes-section/DishesSection";
 import Footer from "../components/footer/Footer";
-import Hero from "../components/hero/Hero";
-import IconSection from "../components/icon-section/IconSection";
+import Hero from "../components/home/hero/Hero";
+import IconSection from "../components/home/icon-section/IconSection";
 import Navbar from "../components/navbar/Navbar";
-import RestaurantsSection from "../components/restaurants-section/RestaurantsSection";
+import RestaurantsSection from "../components/home/restaurants-section/RestaurantsSection";
 import PageAnimator from "../utils/PageAnimator";
 
 function HomePage() {

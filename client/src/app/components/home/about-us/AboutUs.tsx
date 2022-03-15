@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../logo/Logo";
-import Button from "../UI/button/Button";
-import Icon from "../UI/icon/Icon";
-import Marginer from "../UI/marginer/Marginer";
-import Title from "../UI/title/Title";
+import Logo from "../../logo/Logo";
+import Button from "../../UI/button/Button";
+import Icon from "../../UI/icon/Icon";
+import Marginer from "../../UI/marginer/Marginer";
+import Title from "../../UI/title/Title";
 import "./AboutUs.scss";
 
 function AboutUs() {

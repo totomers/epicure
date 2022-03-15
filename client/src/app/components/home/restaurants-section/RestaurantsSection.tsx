@@ -1,11 +1,11 @@
 import React from "react";
-import { restaurants } from "../../../_mock-data.ts/restaurants";
-import Card from "../UI/card/Card";
-import Carousel from "../UI/carousel/Carousel";
-import Marginer from "../UI/marginer/Marginer";
-import Title from "../UI/title/Title";
+import { restaurants } from "../../../../_mock-data.ts/restaurants";
+import Card from "../../UI/card/Card";
+import Carousel from "../../UI/carousel/Carousel";
+import Marginer from "../../UI/marginer/Marginer";
+import Title from "../../UI/title/Title";
 import "./RestaurantsSection.scss";
-
+import ClipLoader from "react-spinners/ClipLoader";
 const footer = (
   <div className="hide-for-mobile">
     <div className="restaurant-footer ">
@@ -18,11 +18,11 @@ const footer = (
 );
 
 function RestaurantsSection() {
-  const slidesToShowScreenMap = [
-    { screen: 375, amount: 1.5 },
-    { screen: 475, amount: 1.5 },
-    { screen: 375, amount: 1.5 },
-  ];
+  // const slidesToShowScreenMap = [
+  //   { screen: 375, amount: 1.5 },
+  //   { screen: 475, amount: 1.5 },
+  //   { screen: 375, amount: 1.5 },
+  // ];
 
   return (
     <div className="section restaurant-section center">
@@ -30,10 +30,11 @@ function RestaurantsSection() {
         <Title customClass="restaurant-title-mobile">
           THE POPULAR RESTAURANTS IN EPICURE :
         </Title>
+        <ClipLoader color={"red"} loading={true} size={150} />
         <div className="carousel-container">
           <Carousel
             footer={footer}
-            slidesToShowScreenMap={slidesToShowScreenMap}
+            // slidesToShowScreenMap={slidesToShowScreenMap}
           >
             {restaurants.map((r) => (
               <Card

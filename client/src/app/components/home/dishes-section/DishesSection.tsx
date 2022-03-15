@@ -1,9 +1,9 @@
 import React from "react";
-import { dishes } from "../../../_mock-data.ts/dishes";
-import Card from "../UI/card/Card";
-import Carousel from "../UI/carousel/Carousel";
-import Marginer from "../UI/marginer/Marginer";
-import Title from "../UI/title/Title";
+import { dishes } from "../../../../_mock-data.ts/dishes";
+import Card from "../../UI/card/Card";
+import Carousel from "../../UI/carousel/Carousel";
+import Marginer from "../../UI/marginer/Marginer";
+import Title from "../../UI/title/Title";
 import "./DishesSection.scss";
 
 function DishesSection() {

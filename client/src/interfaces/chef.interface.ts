@@ -1,6 +1,7 @@
 import { IRestaurant } from "./restaurant.interface";
 
 export interface IChef {
+  _id: string;
   name: string;
   descr: string;
   url: string;

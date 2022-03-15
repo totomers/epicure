@@ -1,7 +1,7 @@
 import React from "react";
-import { SlideAnimator } from "../../utils/SlideAnimator";
-import Routes from "../navbar/subcomponents/Routes";
-import Input from "../UI/input/Input";
+import { SlideAnimator } from "../../../utils/SlideAnimator";
+import Routes from "../../navbar/subcomponents/Routes";
+import Input from "../../UI/input/Input";
 import "./Hero.scss";
 import HeroRoutes from "./subcomponents/HeroRoutes";
 function Hero() {

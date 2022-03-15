@@ -1,7 +1,7 @@
 import React from "react";
-import { IRoute } from "../../../../interfaces/route.interface";
-import { routes } from "../../../../_mock-data.ts/routes.data";
-import Marginer from "../../UI/marginer/Marginer";
+import { IRoute } from "../../../../../interfaces/route.interface";
+import { routes } from "../../../../../_mock-data.ts/routes.data";
+import Marginer from "../../../UI/marginer/Marginer";
 import "./HeroRoutes.scss";
 
 function RouteItem(props: { route: IRoute }) {

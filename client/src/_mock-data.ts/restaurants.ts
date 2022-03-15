@@ -2,16 +2,19 @@ import { IRestaurant } from "../interfaces/restaurant.interface";
 import { imageBaseRestaurantUrl } from "./util";
 
 const r1: IRestaurant = {
+  _id: "",
   name: "Claro",
   url: `${imageBaseRestaurantUrl}/claro.png`,
   chef: "Ran Shmueli",
 };
 const r2: IRestaurant = {
+  _id: "",
   name: "Lumina",
   url: `${imageBaseRestaurantUrl}/lumina.png`,
   chef: "Meir Adoni",
 };
 const r3: IRestaurant = {
+  _id: "",
   name: "Tiger Lilly",
   url: `${imageBaseRestaurantUrl}/tiger-lili.png`,
   chef: "Yanir Green",
@@ -20,16 +23,19 @@ const r3: IRestaurant = {
 export const restaurants: IRestaurant[] = [r1, r2, r3, r2];
 
 export const r4: IRestaurant = {
+  _id: "",
   name: "Onza",
   url: `${imageBaseRestaurantUrl}/onza.png`,
   chef: "Yossi Shitrit",
 };
 export const r5: IRestaurant = {
+  _id: "",
   name: "Kitchen Market",
   url: `${imageBaseRestaurantUrl}/kitchenMarket.png`,
   chef: "Yossi Shitrit",
 };
 export const r6: IRestaurant = {
+  _id: "",
   name: "Mashya",
   url: `${imageBaseRestaurantUrl}/mashya.png`,
   chef: "Yossi Shitrit",

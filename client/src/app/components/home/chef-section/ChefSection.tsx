@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "../UI/title/Title";
+import Title from "../../UI/title/Title";
 import "./ChefSection.scss";
-import { c1 } from "../../../_mock-data.ts/chefs";
+import { c1 } from "../../../../_mock-data.ts/chefs";
 import ImageWithLabel from "./subcomponents/ImageWithLabel";
-import Carousel from "../UI/carousel/Carousel";
-import Card from "../UI/card/Card";
-import Marginer from "../UI/marginer/Marginer";
+import Carousel from "../../UI/carousel/Carousel";
+import Card from "../../UI/card/Card";
+import Marginer from "../../UI/marginer/Marginer";
 function ChefSection() {
   const firstName = c1.name.split(" ")[0];
 

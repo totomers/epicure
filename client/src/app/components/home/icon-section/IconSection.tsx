@@ -1,7 +1,7 @@
 import React from "react";
-import Icon from "../UI/icon/Icon";
-import Marginer from "../UI/marginer/Marginer";
-import Title from "../UI/title/Title";
+import Icon from "../../UI/icon/Icon";
+import Marginer from "../../UI/marginer/Marginer";
+import Title from "../../UI/title/Title";
 import "./IconSection.scss";
 
 function IconSection() {
