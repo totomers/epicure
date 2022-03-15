@@ -1,0 +1,11 @@
+@import "../../../../styles/mixins.scss";
+
+.spinner-container {
+  width: 100%;
+  @include flex-center();
+}
+
+.spinner {
+  display: block;
+  margin: 0 auto;
+}

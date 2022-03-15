@@ -1,10 +1,12 @@
+import { IRestaurant } from "./restaurant.interface";
+
 export interface IDish {
   name: string;
-  descr: string;
+  ingredients: string;
   url: string;
-  restaurant: string;
+  restaurant: IRestaurant;
   price: number;
-  logo?: string;
+  tags?: string[];
   url2x?: string;
   url3x?: string;
 }
