@@ -6,6 +6,7 @@ import "./Navbar.scss";
 import Icon from "../UI/icon/Icon";
 import Marginer from "../UI/marginer/Marginer";
 import { Link } from "react-router-dom";
+import SearchInput from "../search-input/SearchInput";
 function Navbar() {
   return (
     <>
@@ -34,18 +35,18 @@ function Navbar() {
         </div>
         <div className="absolute-layer center-row hide-for-non-mobile ">
           <div className="hide-for-non-mobile">
-            <Icon url="/icons/epicure-icon-small@3x.png" size={31}></Icon>
+            <Icon url="/icons/epicure-icon-small@3x.png"></Icon>
           </div>
         </div>
         <div className="right-navbar">
-          <Input
+          <SearchInput
             iconUrl="/icons/search-icon.svg"
             iconCustomClass={"right-nav-icon"}
             iconSize={22}
             iconDirection={"right"}
             className="navbar-input hide-for-mobile"
             placeHolder="Search for restaurant cuisine, chef"
-          ></Input>
+          ></SearchInput>
           <Icon
             url="/icons/search-icon.svg"
             customClass={"hide-for-non-mobile right-nav-icon"}

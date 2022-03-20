@@ -1,4 +1,19 @@
+@import "../../../../styles/mixins.scss";
 .default {
-  height: 30px;
+  height: 27px;
   width: auto;
+  cursor: pointer;
+}
+
+.icon-container {
+  @include flex-center(
+
+  ); //THIS IS CAUSING THE NON MOBILE HIDE CLASS TO NOT WORK
+  transition: all 100ms ease-in;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(1.1);
+  }
 }

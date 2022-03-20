@@ -35,5 +35,25 @@
 }
 
 .active {
-  background-color: rgba(0, 0, 0, 0.027);
+  // background-color: rgba(0, 0, 0, 0.027);
+  // border-bottom: 1px solid yellow;
+
+  &:after {
+    // content: url("../../../../../public/icons/bag-icon.svg");
+    // background-image: url("/icons/delete-icon.svg");
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    height: 30px;
+    width: 100%;
+    background-color: $pumpkin-90;
+    // width: 110px;
+    height: 1.8px;
+    // margin: 52px 98px 7px 317px;
+    object-fit: contain;
+    opacity: 0.5;
+    // border: solid 1.8px $pumpkin-90;
+  }
 }

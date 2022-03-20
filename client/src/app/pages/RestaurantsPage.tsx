@@ -8,23 +8,70 @@ import { List } from "../components/UI/list/List";
 import PageAnimator from "../utils/PageAnimator";
 import { useGetAllRestaurantsQuery } from "../../services/epicure";
 import { SERVER_DEVELOPMENT_URL } from "../../CONFIG";
+import Grid from "../components/UI/grid/Grid";
+import "./RestaurantsPage.scss";
+
 function RestaurantsPage() {
-  const { data, error, isLoading } = useGetAllRestaurantsQuery(null);
+  const [filter, setFilter] = useState("");
+  const [tabIndex, setTabIndex] = useState(0);
+  const { data, error, isLoading } = useGetAllRestaurantsQuery(filter);
   console.log(data);
+
   const restaurants = data?.restaurants;
+  // console.log("url", SERVER_DEVELOPMENT_URL + data?.restaurants[7].url);
+
   return (
     <PageAnimator>
-      <div className="full center">
+      <div className="full ">
+        <div className="restaurant-tab-filters">
+          <a
+            onClick={() => {
+              setTabIndex(0);
+              setFilter("");
+            }}
+            className={tabIndex === 0 ? "active-tab" : ""}
+          >
+            All
+          </a>
+          <a
+            onClick={() => {
+              setTabIndex(1);
+              setFilter("new");
+            }}
+            className={tabIndex === 1 ? "active-tab" : ""}
+          >
+            New
+          </a>
+          <a
+            onClick={() => {
+              setTabIndex(2);
+              setFilter("popular");
+            }}
+            className={tabIndex === 2 ? "active-tab" : ""}
+          >
+            Most Popular
+          </a>
+          <a
+            onClick={() => {
+              setTabIndex(3);
+              setFilter("open");
+            }}
+            className={tabIndex === 3 ? "active-tab" : ""}
+          >
+            Open Now
+          </a>
+        </div>
         {data && (
-          <List>
+          <Grid>
             {restaurants?.map((r) => (
-              <ListItem
+              <Card
                 url={SERVER_DEVELOPMENT_URL + r.url}
                 title={r.name}
+                subtitle={r.chef.name}
                 key={r._id}
-              ></ListItem>
+              ></Card>
             ))}
-          </List>
+          </Grid>
         )}
       </div>
     </PageAnimator>

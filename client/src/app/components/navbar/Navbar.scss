@@ -52,6 +52,10 @@
   height: 14px;
   width: auto;
   user-select: none;
+  @include md() {
+    height: 22px;
+    display: none;
+  }
 }
 
 .logo-home-link {

@@ -3,19 +3,22 @@ import "./Icon.scss";
 
 interface IPropsIcon {
   url?: string;
-  size?: number;
   customClass?: string;
   style?: CSSProperties;
+  onIconClick?: any;
 }
 
 function Icon(props: IPropsIcon) {
-  const { url = "", style, customClass } = props;
+  const { url = "", style, customClass, onIconClick } = props;
   return (
-    <img
-      src={url}
-      style={{ ...style }}
-      className={`default ${customClass}`}
-    ></img>
+    <a className="icon-container">
+      <img
+        src={url}
+        style={{ ...style }}
+        className={`default ${customClass}`}
+        onClick={onIconClick}
+      ></img>
+    </a>
   );
 }
 

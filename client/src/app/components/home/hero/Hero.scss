@@ -26,8 +26,10 @@
   background-color: rgba($white, 0.88);
   z-index: 1;
   width: 335px;
+  padding-bottom: 22px;
   @include md() {
     width: 781px;
+    padding-bottom: 42px;
   }
   & h1 {
     font-family: HelveticaNeue;
@@ -55,14 +57,12 @@
   font-size: 13px;
   font-weight: 100;
   letter-spacing: 0.93px;
-  margin-bottom: 22px;
 
   @include md {
     width: 511px;
     height: 48px;
     font-size: 22px;
     margin-top: 18px;
-    margin-bottom: 42px;
 
     opacity: 1;
   }
