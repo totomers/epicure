@@ -14,7 +14,7 @@ export default function RestaurantPage() {
           <li>{data?.restaurant.name}</li>
           <li>
             <img
-              src={SERVER_DEVELOPMENT_URL + data?.restaurant.url}
+              src={data?.restaurant.url}
               style={{ height: "50px", width: "50px" }}
             ></img>
           </li>

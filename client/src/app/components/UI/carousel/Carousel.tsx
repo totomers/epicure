@@ -81,7 +81,6 @@ function Carousel(props: IPropsCarousel) {
           infinite: false,
           dots: false,
           // centerMode: true,
-          variableWidth: false,
           centerPadding: "10px",
         },
       },

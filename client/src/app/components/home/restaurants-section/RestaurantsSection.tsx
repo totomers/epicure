@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { SERVER_DEVELOPMENT_URL } from "../../../../CONFIG";
 import {
   useGetAllRestaurantsQuery,
   useGetPopularRestaurantsQuery,

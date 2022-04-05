@@ -4,13 +4,16 @@
   width: 100%;
   @include flex-center();
   & > * {
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 36.3px;
+    // margin-left: 4px;
   }
   font-family: HelveticaNeue;
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 1.92px;
+  a {
+    cursor: pointer;
+  }
 }
 
 .active-tab {

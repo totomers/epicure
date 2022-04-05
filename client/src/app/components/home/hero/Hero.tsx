@@ -9,7 +9,11 @@ function Hero() {
   return (
     <>
       <div className="hero">
-        <img src="/images/hero/hero-picture.png" className="background"></img>
+        <img src="/images/hero-picture.png" className="background" />
+        {/* <img
+          src="https://www.fao.org/images/devforestslibraries/default-album/forests.jpg?sfvrsn=2dd96b96_11"
+          className="background"
+        /> */}
         <SlideAnimator direction="down">
           <div className="hero-card">
             <h1>Epicure works with the top chef restaurants in Tel Aviv</h1>

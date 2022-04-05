@@ -10,6 +10,7 @@ import {
   useGetWeeklyChefQuery,
 } from "../../../../services/epicure";
 import { ChefRestaurants } from "./subcomponents/ChefRestaurants";
+import { SERVER_DEVELOPMENT_URL } from "../../../../CONFIG";
 function ChefSection() {
   const { data, isLoading, isSuccess } = useGetWeeklyChefQuery(null);
 
@@ -20,6 +21,8 @@ function ChefSection() {
   const getFirstName = (fullname: string | undefined) => {
     return fullname?.split(" ")[0];
   };
+
+  console.log("weekly chef url", SERVER_DEVELOPMENT_URL + data?.weeklyChef.url);
 
   return (
     <div className="section  chef-section">

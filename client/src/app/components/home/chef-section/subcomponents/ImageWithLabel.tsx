@@ -13,7 +13,7 @@ function ImageWithLabel(props: IPropsImageWithLabel) {
 
   return (
     <div className="image-container">
-      <img src={SERVER_DEVELOPMENT_URL + url}></img>
+      <img src={url}></img>
       <div>
         <span>{label}</span>
       </div>

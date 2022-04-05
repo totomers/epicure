@@ -10,6 +10,7 @@ import { useGetAllRestaurantsQuery } from "../../services/epicure";
 import { SERVER_DEVELOPMENT_URL } from "../../CONFIG";
 import Grid from "../components/UI/grid/Grid";
 import "./RestaurantsPage.scss";
+import Marginer from "../components/UI/marginer/Marginer";
 
 function RestaurantsPage() {
   const [filter, setFilter] = useState("");
@@ -22,7 +23,9 @@ function RestaurantsPage() {
 
   return (
     <PageAnimator>
-      <div className="full ">
+      <div className="full">
+        <Marginer height={43} />
+
         <div className="restaurant-tab-filters">
           <a
             onClick={() => {
@@ -61,11 +64,12 @@ function RestaurantsPage() {
             Open Now
           </a>
         </div>
+        <Marginer height={35} />
         {data && (
           <Grid>
             {restaurants?.map((r) => (
               <Card
-                url={SERVER_DEVELOPMENT_URL + r.url}
+                url={r.url}
                 title={r.name}
                 subtitle={r.chef.name}
                 key={r._id}

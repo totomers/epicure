@@ -1,5 +1,8 @@
 import React from "react";
-import { useGetAllDishesQuery } from "../../../../services/epicure";
+import {
+  useGetAllDishesQuery,
+  useGetSignatureDishesOfRestaurantsQuery,
+} from "../../../../services/epicure";
 // import { dishes } from "../../../../_mock-data.ts/dishes";
 import Card from "../../UI/card/Card";
 import Carousel from "../../UI/carousel/Carousel";
@@ -8,7 +11,8 @@ import Title from "../../UI/title/Title";
 import "./DishesSection.scss";
 
 function DishesSection() {
-  const { data, isLoading, isSuccess } = useGetAllDishesQuery(null);
+  const { data, isLoading, isSuccess } =
+    useGetSignatureDishesOfRestaurantsQuery(null);
   const getIconUrl = (tag: string | undefined) => {
     switch (tag) {
       case "spicy":
@@ -23,27 +27,29 @@ function DishesSection() {
         return "";
     }
   };
+  console.log("signature dishessss:", data?.signatureDishes);
+
   return (
     <div className="section dishes-section">
-      <Title customClass="dishes-title">SIGNATURE DISH OF :</Title>
+      {/* <Title customClass="dishes-title">SIGNATURE DISH OF :</Title>
       {isSuccess && (
-        <Carousel slidesToShowMobiles={1.2}>
-          {data?.dishes?.map((d) => (
+        <Carousel slidesToShowMobiles={1.2} slidesToShow={3}>
+          {data?.signatureDishes?.map((d) => (
             <Card
-              key={d.name}
-              title={d.name}
-              hoverTitle={d.restaurant.name}
-              url={d.url}
-              price={d.price}
-              subtitle={d.ingredients}
-              logo={getIconUrl(d.tags && d.tags[0])}
+              key={d.signatureDish.name}
+              title={d.signatureDish.name}
+              hoverTitle={d.restaurantName}
+              url={d.signatureDish.url}
+              price={d.signatureDish.price}
+              subtitle={d.signatureDish.ingredients}
+              logo={getIconUrl(d.signatureDish.tags && d.signatureDish.tags[0])}
               long={true}
               logoSize={39}
               margin={5}
             ></Card>
           ))}
         </Carousel>
-      )}
+      )} */}
     </div>
   );
 }

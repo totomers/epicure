@@ -4,7 +4,6 @@ import ListItem from "../components/UI/list-item/ListItem";
 import { List } from "../components/UI/list/List";
 import PageAnimator from "../utils/PageAnimator";
 import { useGetAllChefsQuery } from "../../services/epicure";
-import { SERVER_DEVELOPMENT_URL } from "../../CONFIG";
 function ChefsPage() {
   const { data, error, isLoading } = useGetAllChefsQuery(null);
   console.log(data);
@@ -15,11 +14,7 @@ function ChefsPage() {
         {data && (
           <List>
             {chefs?.map((c) => (
-              <ListItem
-                url={SERVER_DEVELOPMENT_URL + c.url}
-                title={c.name}
-                key={c._id}
-              ></ListItem>
+              <ListItem url={c.url} title={c.name} key={c._id}></ListItem>
             ))}
           </List>
         )}

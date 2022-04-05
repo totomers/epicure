@@ -15,7 +15,7 @@ export default function DishPage() {
           <li>{data?.dish.ingredients}</li>
           <li>
             <img
-              src={SERVER_DEVELOPMENT_URL + data?.dish.url}
+              src={data?.dish.url}
               style={{ height: "50px", width: "50px" }}
             ></img>
           </li>
