@@ -5,7 +5,7 @@ import { IChef } from "../interfaces/chef.interface";
 import { IDish } from "../interfaces/dish.interface";
 import { ISearchResults } from "../interfaces/search.interface";
 
-const baseUrl = "ec2-3-68-72-217.eu-central-1.compute.amazonaws.com/api/v1/";
+const baseUrl = "/api/v1/";
 // Define a service using a base URL and expected endpoints
 export const epicureApi = createApi({
   reducerPath: "epicureApi",
